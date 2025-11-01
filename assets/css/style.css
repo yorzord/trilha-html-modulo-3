@@ -18,12 +18,12 @@ a { color:blue; text-decoration: none;}
     display: grid;
     gap: 3rem;
     grid-template-areas: "sidebar main anchors";
-    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,20rem);
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 .footer {
-    min-height: 100px;
+    min-height: 70px;
     border-top: solid 1px #cdcdcd;
 }
 .anchors {
@@ -35,4 +35,8 @@ a { color:blue; text-decoration: none;}
 }
 figure {
     text-align: center;
+}
+.main {
+    max-height: 70vh;
+    overflow-y: scroll;
 }
